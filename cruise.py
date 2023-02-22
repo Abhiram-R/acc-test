@@ -13,7 +13,7 @@ def control(speed=0, acceleration=0, car_in_front=200, gap=100, cruise_speed=0, 
 
         set_point = 0
         if state is None:
-            state = dict(K_p=0.15, K_d=0., K_i=0.0003, prev_setpoint=0., integral_setpoint=0.)
+            state = dict(K_p=0.15, K_d=0.1, K_i=0.00031, prev_setpoint=0., integral_setpoint=0.)
 
         delta_distance = car_in_front - 2 * gap - speed ** 2
 
