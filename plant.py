@@ -26,8 +26,8 @@ def car_plant(pos, speed=40, grade=-20, gas=1, brake=0):
     mass = 1700
     aero_cd = 0.3
 
-    force_peak = mass * 3.
-    force_brake_peak = -mass * 20.
+    force_peak = mass * 4.
+    force_brake_peak = -mass * 25.
     power_peak = 100000   # 100kW
     speed_base = power_peak / force_peak
     rolling_res = 0.01
