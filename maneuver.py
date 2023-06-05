@@ -35,7 +35,7 @@ SAFE_DISTANCE = (
 def safe_gap(speed):
     x = np.array([x * CV.KPH_TO_MS for x, y in SAFE_DISTANCE])
     y = np.array([y for x, y in SAFE_DISTANCE])
-    z = np.polyfit(x, y, 3)
+    z = np.polyfit(x, y, 2)
     p = np.poly1d(z)
 
     return p(speed)
