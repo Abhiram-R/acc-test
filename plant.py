@@ -14,7 +14,7 @@ class CV:
     MS_TO_KNOTS = 1.9438
 
 def scale_acceleration(speed):
-    xp = [80*CV.KPH_TO_MS, 100*CV.KPH_TO_MS, 120*CV.KPH_TO_MS]
+    xp = [80*CV.KPH_TO_MS, 120*CV.KPH_TO_MS, 150*CV.KPH_TO_MS]
     yp = [1, 2, 3]
     acceleration_scale_factor = np.interp(speed, xp, yp)
     return acceleration_scale_factor
